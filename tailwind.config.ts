@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+      fontFamily: {
+        geist_sans: ["var(--font-geist-sans)", "sans-serif"],
+        geist_mono: ["var(--font-geist-mono)", "mono-serif"],
+      },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
