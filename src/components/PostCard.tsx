@@ -215,7 +215,6 @@ function PostCard({post, dbUserId} : {post:Post; dbUserId: string | null}) {
                                         Sign in to comment
                                     </Button>
                                 </SignInButton>
-
                             </div>
                         )}
                     </div>
