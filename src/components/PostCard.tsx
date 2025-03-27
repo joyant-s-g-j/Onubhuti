@@ -3,7 +3,8 @@
 import React from 'react'
 import { useUser } from '@clerk/nextjs';
 import { useState } from 'react';
-import { getPosts, toggleLike } from '@/actions/post.action';
+import { createComment, getPosts, toggleLike } from '@/actions/post.action';
+import toast from 'react-hot-toast';
 
 type Posts = Awaited<ReturnType<typeof getPosts>>
 type Post = Posts[number]
@@ -32,10 +33,23 @@ function PostCard({post, dbUserId} : {post:Post; dbUserId: string | null}) {
     }
   }
   const handleAddComment = async () => {
-
+    if(!newComment.trim() || isCommenting) return
+    try {
+        setIsCommenting(true)
+        const result = await createComment(post.id, newComment)
+        if(result?.success) {
+            toast.success("Comment posted successfully")
+            setNewComment("");
+        }
+    } catch (error) {
+        toast.error("Failed to add comment")
+    } finally {
+        setIsCommenting(false)
+    }
   }
   const handleDeletePost = async () => {
-
+    if(isDeleting) return
+    
   }
   return (
     <div>PostCard</div>
