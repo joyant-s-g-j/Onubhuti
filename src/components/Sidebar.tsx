@@ -61,7 +61,7 @@ async function Sidebar() {
                     <div className='w-full space-y-2 text-sm'>
                         <div className='flex items-center text-muted-foreground'>
                             <MapPinIcon className='w-4 h-4 mr-2' />
-                            {user.loction || "No Location"}
+                            {user.location || "No Location"}
                         </div>
                         <div className='flex items-center text-muted-foreground'>
                             <LinkIcon className='w-4 h-4 mr-2 shrink-0' />

@@ -21,7 +21,7 @@ model User {
   name String?
   bio String?
   image String?
-  loction String?
+  location String?
   website String?
   createdAt DateTime @default(now())
   updateAt DateTime @updatedAt
