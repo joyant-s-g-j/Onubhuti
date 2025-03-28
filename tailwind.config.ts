@@ -13,6 +13,9 @@ const config: Config = {
         geist_sans: ["var(--font-geist-sans)", "sans-serif"],
         geist_mono: ["var(--font-geist-mono)", "mono-serif"],
       },
+	  letterSpacing: {
+        'extra-widest': '0.25em', 
+      },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
