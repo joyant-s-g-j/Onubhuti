@@ -3,7 +3,7 @@
 🚀 **Onubhuti** is a modern social media platform where users can **share photos and statuses, follow and unfollow others, receive notifications, and edit their profiles**. Built with **Next.js App Router, PostgreSQL, Prisma, Clerk, TypeScript, Tailwind CSS, ShadCN & UploadThing**, Onubhuti offers a smooth and interactive user experience with a clean and accessible UI.  
 
 ### 🔗 Live Demo  
-Check out the live version here: **[Onubhuti Live](https://onubhuti.example.com)**  
+Check out the live version here: **[Onubhuti Live](https://onubhuti.vercel.app/)**  
 
 ## ✨ Features  
 📸 **Photo & Status Sharing** – Users can post photos and status updates.  
