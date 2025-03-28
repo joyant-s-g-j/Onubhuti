@@ -21,14 +21,8 @@ export default function NotFound() {
                             <Button variant="default" asChild>
                                 <Link href="/">
                                     <HomeIcon className="mr-2 size-4" />
-                                    Back to Home
-                                </Link>
-                            </Button>
-
-                            <Button variant="outline" asChild>
-                                <Link href="/">
                                     <ArrowLeftIcon className="mr-2 size-4" />
-                                    Home
+                                    Back to Home
                                 </Link>
                             </Button>
                         </div>
